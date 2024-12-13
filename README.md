@@ -1,0 +1,3 @@
+# Dart: Rethrowing Exceptions vs. Handling Locally in Async Functions
+
+This example showcases a common scenario in Dart asynchronous programming: exception handling in `async` functions.  The included `bug.dart` demonstrates a function which uses a `try-catch` block to handle errors from an API call.  However, `rethrow` might not always be the ideal solution, as it might lead to unexpected behavior or unhandled exceptions higher up the call stack.   `bugSolution.dart` presents an alternative way to handle this by presenting a more user-friendly error to the user without rethrowing the exception.
